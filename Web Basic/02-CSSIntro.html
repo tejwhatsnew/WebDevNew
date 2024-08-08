@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            border-style: double;
+            border-color: aqua;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: aqua;
+            text-align: center;
+        }
+        p {
+            color: azure;
+        }
+        p:nth-of-type(2) {
+            color: bisque;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: aqua;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button:hover {
+            background-color: #00ced1;
+        }
+        .btn {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .btn-outline-light {
+            color: white;
+            border-color: yellow;    
+        }
+        .btn-outline-light:hover {
+            background-color: black;
+            color: white;
+        }
+        .btn-outline-danger {
+            color: red;
+            border-color: red;
+        }
+        .btn-outline-danger:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML and CSS</h1>
+        <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It describes the structure of a web page using elements such as headings, paragraphs, links, images, and more.</p>
+        <p><strong>CSS (Cascading Style Sheets)</strong> is a stylesheet language used to describe the presentation of a document written in HTML. CSS controls the layout, colors, fonts, and overall visual appearance of a web page.</p>
+        <div class="button-container">
+            <button class="button">Learn More</button>
+            <button class="button">Get Started</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+        </div>
+    </div>
+</body>
+</html>
