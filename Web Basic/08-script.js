@@ -9,8 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (username === '' || password === '') {
             alert('Please fill in both fields.');
+        } else if (password.length < 8) {
+            alert('Password must be at least 8 characters long.');
         } else {
-            alert(`Username: ${username}\nPassword: ${password}`);
+            const messageContainer = document.createElement('div');
+            messageContainer.style.color = 'green';
+            messageContainer.style.marginTop = '20px';
+            messageContainer.textContent = 'Thank you for submitting';
+            form.appendChild(messageContainer);
         }
     });
 });
