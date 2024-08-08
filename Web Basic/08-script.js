@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             messageContainer.style.marginTop = '20px';
             messageContainer.textContent = 'Thank you for submitting';
             form.appendChild(messageContainer);
+            sessionStorage.setItem('username', username);
+            document.getElementById("loginForm").submit();
         }
     });
 }); 
